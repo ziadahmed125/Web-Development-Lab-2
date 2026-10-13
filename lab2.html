@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width-device-width", intial-scale="1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ziad Ahmed - Portfolio</title>
         <link rel="stylesheet" href="lab2.css">
     </head>
@@ -11,36 +11,46 @@
         <div class="Header">
             <h1>Ziad Ahmed</h1>
             <p>Web Developer | Designer | Freelancer</p>
-            <p>About | Projects | Contact</p>
+            <nav>
+                <a class="button" href="#about">About</a>
+                <a class="button" href="#projects">Projects</a>
+                <a class="button" href="#contactme">Contact Me</a>
+            </nav>
         </div>
         
-        <div class="AboutMe">
+        <div class="AboutMe" id="about">
             <h2>About Me</h2>
-            <p>Hello, I'm Ziad, an aspiring Computer and AI Engineering Student.</p>
+            <p>
+                Hey there! I’m Ziad Ahmed, a Computer and AI Engineering student at Ain Shams University with a passion for building clean, dynamic, and intuitive digital experiences. As an aspiring web developer, I enjoy bridging the gap between intelligent backend logic and smooth, modern user interfaces. Whether I'm crafting responsive layouts or exploring how AI can elevate web applications, I’m always eager to solve complex problems, write efficient code, and learn new technologies along the way. Welcome to my portfolio!
+            </p>
         </div>
     
-        <h2>Projects</h2>
-
-        <div class="Projects">
-            <div>
-                <h5>Project 1</h5>
-                <p>A breif description about the project.</p>
-            </div>
-            <div>
-                <h5>Project 2</h5>
-                <p>A breif description about the project.</p>
-            </div>
-            <div>
-                <h5>Project 3</h5>
-                <p>A breif description about the project.</p>
+        <div class="Projects" id="projects">
+            <h2>Projects</h2>
+            <div class="project-flex">
+                <div class="project-card">
+                    <h5>Project 1</h5>
+                    <p>A brief description about the project.</p>
+                </div>
+                <div class="project-card">
+                    <h5>Project 2</h5>
+                    <p>A brief description about the project.</p>
+                </div>
+                <div class="project-card">
+                    <h5>Project 3</h5>
+                    <p>A brief description about the project.</p>
+                </div>
             </div>
         </div>
 
-        <div class="ContactMe">
-            <h3>Contact Me</h3>
-            <div>
-
-            </div>
+        <div class="ContactMe" id="contactme">
+            <h2>Contact Me</h2>
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="send-button">Send Message</button>
+            </form>
         </div>
     </body>
 </html>
